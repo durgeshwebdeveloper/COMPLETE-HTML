@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+</head>
+<body>
+<!--=>Intoduction to div and span-->
+<!--=> Exploring different Web Layouts-->
+<!--=>Understanding Semantic Divs-->
+<!--Container,header,main,seciton,article,footer,aside,figure-->
+<!-- Adding Audios and Videos-->
+
+<!--1.Create a basic HTML page with a single paragraph using the <div> element.-->
+    <div>This is a paragraph inside a div.</div>
+<!--Output: A webpage displaying the paragraph within a div container.--><br><br><br>
+
+<!--2.Create HTML page with two paragraphs,one using the <div> element and the other using the <span> element.-->
+    <div>This is a paragraph inside a div.</div>
+    <span>This is a span inside the body.</span>
+<!--Output: A webpage displaying two paragraphs ,one within a div and the other directly in the body.--><br><br><br>
+
+<!--3.Create a simple two-column layout using <div> elements.-->
+    <div style="float:left;width: 50%;">Columnn 1 content</div>
+    <div style="float:left;width: 50%;">Columnn 2 content</div>
+<!--Output:A webpage with two columns of equal width.--><br><br><br>
+
+<!--4.Create a header,navigation, and footer using <div> elements.-->
+    <div id="header">Header content</div>
+    <div id="nav">Navigation</div>
+    <div id="main">Main Content</div>
+    <div id="footer">Footer content</div>
+<!--Output: A webpage with a basic header, navigation,main content,and footer layout.--><br><br><br>
+
+<!--5.Use semantic divs(header,main,footer,nav,article,aside,section) to structure a simple blog post.-->
+<header>Blog Title</header>
+<nav>Navigation links</nav>
+<main>
+    <article>
+        <h2>Article Title</h2>
+        <p>Article content</p>
+    </article>
+    <aside>Sidebar content</aside>
+</main>
+<footer>Footer Content</footer>
+<!--Output: A blog post with a structured layout using semantic divs.--><br><br><br>
+
+<!--6.Create a webpage with a figure containing an image and a caption.-->
+<figure>
+    <img src="image.jpg" alt="Image description">
+</figure>
+<!--Output: A webpage displaying an image with a caption within a figure element.--><br><br><br>
+
+<!--7.Embed an audio file into a web page using the <audion> element.-->
+    <audio>
+        <source src="audio.mp3" type="audio/mpeg">Your browser does not support the audio element.
+    </audio>
+<!--Output: A webpage with a player to control audio playback.--><br><br><br>
+
+<!--8.Embed a video file into a webpage uding the <video> element.-->
+    <video controls>
+        <source src="video.mp4" type="video/mp4">Your browser does not support the video element
+    </video>
+<!--Output:A webpage with a player to control video playback.--><br><br><br>
+</body>
+</html>

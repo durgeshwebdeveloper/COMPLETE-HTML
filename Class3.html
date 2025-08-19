@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+ <style>
+    body{
+        background-image:url("images.background.jpg")
+    }
+ </style>
+<body>
+<!--Types of images-->
+<!-- Adding Images to a Website-->
+<!-- Displaying Custom Iccon-favicon-->
+<!-- Image links-->
+<!-- Image Thumbnail-->
+
+<!-- 1.Add an image to a website using the "<img>" tag with a relative path.-->
+ <h1>My Images</h1>
+ <img src="images/pictuere.jpg" alt="Sample Images">
+ <!-- Output: An image called "picture.jpg" will be displayed (assuming it exists in the "images" folder).-->
+
+<!--2.Add an image to a website using an absolute URL.-->
+<h1>External Image</h1>
+<img src="https://example.com/images/sample.jpg" alt="External Image">
+<!--Output: The image from the external link will be displayed.-->
+
+<!--3.Set a favicon for the webpage using a custom image.-->
+<!-- Heading mein likhna Ishko=><link rel="icon" href="favicon.ico" type="image/x-icon">-->
+ <h1>Website with Favicon</h1>
+ <!--Output: A favicon (small icon) appears in the browser tab, using "favicon.ico" located in the same directory.-->
+
+ <!--4. Add an image to the background if a webpage using CSS.-->
+<h1>Background Image Example </h1>
+<p> This page has a background image.</p>
+<!--Output: A webpage with "background.jpg" as the backgroundimage.-->
+
+<!--5.Create a clickable  image link that directs the user to another webpage.-->
+<h1>Clickable Image Link</h1>
+<a href="https://www.example.com">
+    <img src="images/clickable.jpg" alt="Clickable Image">
+</a>
+<!--Outpute: An image "clickable.jpg" that, when clicked,takes the user to "https:www.example.com".-->
+
+<!--6.Create an image thumbnail that links to a larger version of the same image.-->
+<h1>Thumbail Example</h1>
+<a href="images/large.jpg">
+    <img src="images/thumbnail.jpg" alt="image Thumbail" width="150" height="150">
+</a>
+<!--Output: A small thumbnail image(150*150) that, when clicked, opens the larger "large.jpg" version.-->
+
+<!--7. Create a responsive image using the "width" attribute set to 100%.-->
+<h1>Responsive Images</h1>
+<img src="images/responsive.jpg" alt="Responsive Image" style="width: 100%;">
+<!--Output: The image "responsive .jpg" will resize to fit 100% of the available width, making it responsive.-->
+
+<!--8.Display an image with both a "width" and "height" attribute -->
+<h1>Image with Specific Dimensions</h1>
+<img src="images/dimensions.jpg" alt="Image with Dimensions" widht="200" height="150">
+<!--Output:  An image "dimensions.jpg" will be displayed with a width of 200px and a height of50px.-->
+
+<!--9.Add multiple images to a webpage side by side.-->
+<h1> Side by Side Images</h1>
+<img src="images/image1.jpg" alt="Image 1" width="200">
+<img src="images/image2.jpg" alt="Image 2" width="200">
+<img src="images/image3.jpg" alt="Image 3" width="200">
+<!--Output: Three images("image1.jpg","image2.jpg","image3.jpg") displayed side by side ,each with a width of 200px.-->
+
+<!--10. Add an image to a webpage that has an 'alt' attribute describing the imgae.-->
+<h1>Image with Description</h1>
+<img src="images/altimage.jpg" alt="A beautiful landscape">
+<!--Output:The image "altimage.jpg" is displayed, and the 'alt' text "A beautiful landscape" will be shown if the image cannot load.-->
+
+<!--11. Create an image that links to a different section of the same webpage using an anchor link.-->
+<h1>Image Anchor Link Example</h1>
+<a href="#section2">
+    <img src="images/linkimage.jpg" alt="Anchor Image" width="200">
+</a>
+<div style="height: 1500px;"></div>
+<h2 id="section 2">You have reached Section 2</h2>
+<!--Output:  A clickable image "linkimage.jpg" that , when clicked,scrolls to SEcton 2 of the same webpage.-->
+
+<!--12. Add an image gallery to a weebpage with thumbnails.-->
+<h1>Image Gallery with Thumbnail</h1>
+<a href="images/large1.jpg"><img src="images/thumb1.jpg" alt="Thumbnail 3" width="100"></a>
+<a href="images/large2.jpg"><img src="images/thumb2.jpg" alt="Thumbnail 2" width="100"></a>
+<a href="images/large3.jpg"><img src="images/thumb3.jpg" alt="Thumbnail 3" width="100"></a>
+<!--Output:A gallery with three thumnail images.Clicking on a thumnail opens the larger version of the image.-->
+
+<!--13. Display an image as a background for a specific element using inline CSS.-->
+<div style="width: 400px; height: 300px; background-image: url('images/divbg.jpg');">
+    <h1>Text over Background</h1>
+</div>
+<!--Output: A 'div' element with a background image "divbg.jpg" and text Display on the top of the image.-->
+
+<!--14.Add an image that is a part of a figure , with a caption below it.-->
+<h1>Image with Caption </h1>
+<img src="images/landscape.jpg" alt="Beautiful Landscape" width="300">
+<figcaption1>A beautiful landscape view.</figcaption1>
+<!--Output:An image "landscape.jpg" is displayed with a caption "A beautiful landscape view" below it.-->
+
+<!--15. Add a decorative image that doesn't appear in assistive technologies using 'aria-hidden="true"'.-->
+<h1>Page with Decorative Image </h1>
+<img src="images/decorative.jpg" alt=" " aria-hidden ="True"><img>
+<!--Output: An image "decorative.jpg" is displayed, but it's hidden form screen readers due to the empty 'alt' and 'aria-hidden="true"' attribute-->
+
+</body>
+</html>

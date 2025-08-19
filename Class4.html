@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        .head{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!-- Structure of a Table -->
+<!-- header,Body and Footer -->
+<!-- Rows, Headings and Data -->
+
+<!-- 1.Create a simple table with  2 rows and 3 columns-->
+<h1>Simple Table</h1>
+<table border="1">
+    <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+        <td>Cell 3</td>
+    </tr>
+    <tr>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+    </tr>
+</table>
+<!--Output: A table with 2 rows and 3 columns , displaying "Cell 1" to "Cell 6" inside the cells.-->
+
+<!-- 2. Create a table with a header  row containing 3 headings.-->
+ <h1>Table with Header Row</h1>
+ <table border="1">
+    <tr>
+        <th>Header 1</th>
+        <th>Header 1</th>
+        <th>Header 1</th>
+    </tr>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 1</td>
+        <td>Data 1</td>
+    </tr>
+ </table>
+ <!--Output: A table with a header row containing "Header 1," "Header 2," and "Header 3". The second row contains  "Data 1," "Data 2," and "Data 3." -->
+
+<!--3. Add a footer row to a table using the "<tfoot>" tag. -->
+<h1>Table with Header ,Body and Footer</h1>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Footer information</td>
+        </tr>
+    </tfoot>
+</table>
+<!--Output: A table with a header row,a body with one data row, and a footer row spanning all three columns.-->
+
+<!--4.Create a table with both row and column headings.-->
+<h1>Table with Row and Column Headings</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Row 1</th>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <th>Row 2</th>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+    </tbody>
+</table>
+<!--Output: A table with row and column headings, where the first row and column have headings.-->
+
+<!--5.Create a table with merged columns using the colspan attribute.-->
+<h1>Table with Merged Columns</h1>
+<table border="1">
+<tr>
+    <td colspan="2">Merged Columns</td>
+</tr>
+<tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+</tr>
+</table>
+<!--Output: The first row contains one cell that spans two coluns, while the second row has two separate cells.-->
+
+<!--6.Create a table with merged rows using the 'rowspan' attribute.-->
+<h1>Table with Merged Rows</h1>
+<table border="1">
+    <tr>
+        <td rowspan="2">Merged Rows</td>
+        <td>Cell 1</td>
+    </tr>
+    <tr>
+        <td>Cell 2</td>
+    </tr>
+    </table>
+<!--Output: The first column of the table has one cell that spans two rows, while the second column has separate  cells for each row.-->
+
+<!--7. Create a table with borders using the 'border' attribute.-->
+<h1>Table with Borders</h1>
+<table border="2">
+    <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+    </tr>
+    <tr>
+        <td>Cell 3</td>
+        <td>Cell 4</td>
+    </tr>
+</table>
+<!--Output: A table with a border thickness of 2 pixels.-->
+
+<!--Create a table with caption uisng the '<caption>' tag.-->
+<h1>Table with a Caption</h1>
+<table border="1">
+    <caption>Table Caption</caption>
+    <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+    </tr>
+</table>
+<!--Output: A table with the caption "Table Caption" displayed above the table.-->
+
+<!--Create a table with alternating row colors using inline CSS.-->
+<h1>Table with Alternating Row Colors</h1>
+<table border="1">
+    <tr style="background-color: lightgray;">
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+    </tr>
+    <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+    </tr>
+    <tr style="background-color: lightgray;">
+        <td>Row 3, Cell 1</td>
+        <td>Row 3, Cell 1</td>
+    </tr>
+</table>
+<!--Output: A table where alternating rows are colored lightgray.-->
+
+<!--Create a table with headings in the first column using '<th>' for column headers.-->
+<h1>Table with Column Headings</h1>
+<table border="1">
+    <tr>
+        <th>Column 1</th>
+        <th>column 2</th>
+    </tr>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+    </tr>
+</table>
+<!--Output: A table where the first row contains colummn headigns for "Column 1" and "Column 2".-->
+
+<!--11.Create a table with centered headings using CSS.-->
+<h1>Table with Centered Headings</h1>
+<table border="1">
+    <tr>
+        <th class="head">Header 1</th>
+        <th class="head">Header 2</th>
+    </tr>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+    </tr>
+</table>
+</body>
+</html>

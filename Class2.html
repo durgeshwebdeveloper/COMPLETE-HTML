@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body>
+<!--Undrstanding URLS -->
+<!--Absolute and Relative URLs-->
+<!--Working with Anchors-->
+
+<!--1.Create an HTML page with a link to an external website using an absolute URL.-->
+<p>Visit the <a href="https://www.google.com" target="_blank">Google</a> website.</p>
+<!-- Output: A link that says "Google" which, when clicked, opens the Google website in a new tab.-->
+
+<!--2.Write an HTML page with a relative URL linking to a file in the same directory called "about.html."-->
+<p>Go to the <a href="about.html">About Us</a>page.</p>
+<!--Output: A link that says "About Us," which takes the user to "about.html" when clicked (assuming it exists in the same directory).-->
+
+<!--3.Create a webpage with a link that scrolls the user to a specific section of the same page using an anchor.-->
+<p><a href="#section2">Go to Section 2</a></p>
+<h1 id="section1">Section 1</h1>
+<p>This is Section 1.</p>
+<h1 id="section2">Section 2 </h1>
+<p>This is Section 2.</p>
+<!--Output: a link that say "Go to Section 2." Clicking on it scrolls th euser to Section 2 on the same page.-->
+
+<!--4. Write an HTML document that links to an image located in a folder called "images"  using a relative URL. -->
+<p>Here is the image.</p>
+<img src=" images/picture.jpg" alt="Sample image">
+<!-- Output: Display the imgge located in the "images" folder (assuming the folder and image exist).-->
+
+<!--5.Create an HTML page with an absolute URL linking to an external stylesheet.-->
+<!-- Heading tag mein likho=> <link rel="styleshet" href="https://example.com/styles.css" -->
+ <h1>Welcome to My Website </h1>
+ <p>This page is styled using an external CSS file.</p>
+ <!--Output:A page styled uisng the external CSS file(if the file exists.) -->
+
+ <!--6.Create a navigation menu with relative links to three different pages : home.html,about.html,and contact.html.-->
+ <nav>
+    <ul>
+        <li> <a href="home.html">Home</a></li>
+        <li> <a href="about.html">About</a></li>
+        <li> <a href="contact.html">Contact</a></li>
+    </ul>
+ </nav>
+ <!--A navigation menu with links to the home,about , and contact pages(assuming the file exist.)-->
+
+ <!--7.Write an HMTL page theat links to an email address using the 'maito': protocol.-->
+ <p>Contact us at <a href="maito:support@example.com">support@example.com</a></p>
+ <!--Output: A link that says "support @ example .com," which opens the default email client when clicked,with the email address field in.-->
+
+ <!--8.Create an HTML page with an anchor link that opens a PDF document located in the "docs" folder using a relative URL.-->
+ <p>Download the document <a href="docs/sample.pdf" target="_blank">here</a>.</p>
+ <!--Output: A link that opens the "sample.pdf"document in a new tab (if it exists in the "docs" foldr).-->
+
+ <!--9.Design a webpage that uses an anchor link to go bakc to  the top of the page.-->
+ <h1>Welcome to My Page</h1>
+ <p> <a href="#bottom">Scroll to Bottom</a></p>
+ <div style="height: 1500px;"></div>
+ <h2 id="bottom">You are at the bottom!</h2>
+ <p><a href="#top">Back to Top</a></p>
+ <!--Output: A link at the bottom that says "Back to Top," which scrolls the user to the top of the page.-->
+
+ <!--10.Write an HTML documetn that opens an external webpage in a new browser window using "targe="_"blank.-->
+ <p>Visit <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>in a new window.</p>
+ <!--Output: A link that opens Wikipedia in a new tab when clicked.-->
+
+ <!--11.Create a webpage that links to a specific section of another page(e.g.,linking to a section of "about.html").-->
+ <p><a href="about.html#team">Got to Our Team Section</a></p>
+ <!--Output: A link that takes the user directly to the "team" section on the "about.html" page (assuming it exists)-->
+
+ <!--12.Create an HTML page with a link that downloads a file instead of opening it.-->
+ <p><a href="files/document.pdf"download>Download Document</a></p>
+ <!--Output: A link that triggers the download of "document .pdf" when  clicked (if it exists in the "files" folder.)-->
+
+ <!--13.Write an HTML page with an anchor that opens a phone dialer using the 'tel:' protocol.-->
+ <p>Call us at <a href="tel:+1234567890">+1234567890</a></p>
+ <!--Output: A link that opens the phone dialer with the number "+1234567890" pre=filled.-->
+
+ <!--14. Create an HTML page that links to an anchor inside an iframe.-->
+ <iframe src="frame.html" width="500" height="300"></iframe>
+<p><a href="frame.html#section1" target="frame">Go to Section 1 in Iframe</a></p>
+<!--Output: An iframe that displays "frame.html" and a link that scrolls the iframe content to Seciton 1.-->
+
+<!--15. Create a webpage with a relative link that navigates to a parent directory.-->
+<p><a href="./index.html">Go to Home Page</a></p>
+<!--Output: A link that navigates to "index.html" in the parent directory when clicked.-->
+
+<!-- These examples are cover various concepts related to URLs,including absolut and relative URLs,
+ working with anchors,opening externa links,and navigating between files or sections within the same or other pages.-->
+</body>
+</html>
